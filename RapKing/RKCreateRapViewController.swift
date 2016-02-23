@@ -12,6 +12,8 @@ import CoreData
 class RKCreateRapViewController: UIViewController
 {
     
+    @IBOutlet weak var textfFieldTitle: UITextField!
+    @IBOutlet weak var textViewRap: UITextView!
     
 
     override func viewDidLoad()
@@ -26,6 +28,23 @@ class RKCreateRapViewController: UIViewController
     }
     
 
+    @IBAction func actionSave(sender: AnyObject)
+    {
+        // ligação com o delegate
+        let appDelegate: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+        let context: NSManagedObjectContext = appDelegate.managedObjectContext
+        
+        // entidade do banco de dados
+        let newRap = NSEntityDescription.insertNewObjectForEntityForName("Rhyme", inManagedObjectContext: context) as NSManagedObject
+        
+        // atributos da entidade
+        newRap.setValue(textfFieldTitle.text, forKey: "title")
+        newRap.setValue(textViewRap.text, forKey: "rap")
+        
+        print(newRap)
+        print("Objetos salvos!")
+        
+    }
     
 
 }
