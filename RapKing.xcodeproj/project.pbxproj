@@ -56,6 +56,9 @@
 		794B31B11C7C95B100E80C79 /* RapKing */ = {
 			isa = PBXGroup;
 			children = (
+				794B31CF1C7D12DD00E80C79 /* Controller */,
+				794B31CE1C7D12D800E80C79 /* View */,
+				794B31CD1C7D12D300E80C79 /* Model */,
 				794B31B21C7C95B100E80C79 /* AppDelegate.swift */,
 				794B31B41C7C95B100E80C79 /* ViewController.swift */,
 				794B31B61C7C95B100E80C79 /* Main.storyboard */,
@@ -65,6 +68,27 @@
 				794B31B91C7C95B100E80C79 /* RapKing.xcdatamodeld */,
 			);
 			path = RapKing;
+			sourceTree = "<group>";
+		};
+		794B31CD1C7D12D300E80C79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		794B31CE1C7D12D800E80C79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		794B31CF1C7D12DD00E80C79 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +312,7 @@
 				794B31C61C7C95B100E80C79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
