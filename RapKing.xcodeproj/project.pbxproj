@@ -13,6 +13,7 @@
 		794B31BB1C7C95B100E80C79 /* RapKing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 794B31B91C7C95B100E80C79 /* RapKing.xcdatamodeld */; };
 		794B31BD1C7C95B100E80C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794B31BC1C7C95B100E80C79 /* Assets.xcassets */; };
 		794B31C01C7C95B100E80C79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794B31BE1C7C95B100E80C79 /* LaunchScreen.storyboard */; };
+		79571D1B1C7D1714007EC09F /* RKCreateRapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79571D1A1C7D1714007EC09F /* RKCreateRapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		794B31BC1C7C95B100E80C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		794B31BF1C7C95B100E80C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		794B31C11C7C95B100E80C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79571D1A1C7D1714007EC09F /* RKCreateRapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKCreateRapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +63,7 @@
 				794B31CD1C7D12D300E80C79 /* Model */,
 				794B31B21C7C95B100E80C79 /* AppDelegate.swift */,
 				794B31B41C7C95B100E80C79 /* ViewController.swift */,
-				794B31B61C7C95B100E80C79 /* Main.storyboard */,
 				794B31BC1C7C95B100E80C79 /* Assets.xcassets */,
-				794B31BE1C7C95B100E80C79 /* LaunchScreen.storyboard */,
-				794B31C11C7C95B100E80C79 /* Info.plist */,
-				794B31B91C7C95B100E80C79 /* RapKing.xcdatamodeld */,
 			);
 			path = RapKing;
 			sourceTree = "<group>";
@@ -73,6 +71,8 @@
 		794B31CD1C7D12D300E80C79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				794B31B91C7C95B100E80C79 /* RapKing.xcdatamodeld */,
+				794B31C11C7C95B100E80C79 /* Info.plist */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -80,6 +80,8 @@
 		794B31CE1C7D12D800E80C79 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				794B31B61C7C95B100E80C79 /* Main.storyboard */,
+				794B31BE1C7C95B100E80C79 /* LaunchScreen.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -87,6 +89,7 @@
 		794B31CF1C7D12DD00E80C79 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				79571D1A1C7D1714007EC09F /* RKCreateRapViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				794B31B51C7C95B100E80C79 /* ViewController.swift in Sources */,
+				79571D1B1C7D1714007EC09F /* RKCreateRapViewController.swift in Sources */,
 				794B31B31C7C95B100E80C79 /* AppDelegate.swift in Sources */,
 				794B31BB1C7C95B100E80C79 /* RapKing.xcdatamodeld in Sources */,
 			);
