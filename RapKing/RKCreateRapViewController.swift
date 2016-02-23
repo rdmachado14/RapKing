@@ -30,37 +30,28 @@ class RKCreateRapViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
-
+    
     @IBAction func actionSave(sender: AnyObject)
     {
+        // ligando com o app delegate
+        let appDelegate: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+        let context: NSManagedObjectContext = appDelegate.managedObjectContext
         
+        // escolhendo a entidade
+        let newRhyme = NSEntityDescription.insertNewObjectForEntityForName("Rhyme", inManagedObjectContext: context) as NSManagedObject
+        
+        // salvando nos atributos da entidade
+        newRhyme.setValue(textFieldRapTitle.text, forKey: "title")
+        newRhyme.setValue(textViewRap.text, forKey: "rap")
+        
+        print(newRhyme)
+        print("Objeto salvo!")
     }
     
-    func saveRhyme(name: String) {
-        //1
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        
-        let managedContext = appDelegate.managedObjectContext
-        
-        //2
-        let entity =  NSEntityDescription.entityForName("Person", inManagedObjectContext:managedContext)
-        
-        let person = NSManagedObject(entity: entity!,
-            insertIntoManagedObjectContext: managedContext)
-        
-        //3
-        person.setValue(name, forKey: "name")
-        
-        //4
-        do {
-            try managedContext.save()
-            //5
-            people.append(person)
-        } catch let error as NSError  {
-            print("Could not save \(error), \(error.userInfo)")
-        }
-    }
 
+
+    
+    
 
 
 }

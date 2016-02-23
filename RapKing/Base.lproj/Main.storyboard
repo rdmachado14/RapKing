@@ -52,7 +52,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcQ-Cm-O6A">
-                                <rect key="frame" x="167" y="523" width="43" height="30"/>
+                                <rect key="frame" x="305" y="109" width="43" height="30"/>
                                 <state key="normal" title="Salvar"/>
                                 <connections>
                                     <action selector="actionSave:" destination="BFz-Eg-5Sd" eventType="touchUpInside" id="lhA-kO-9c2"/>
