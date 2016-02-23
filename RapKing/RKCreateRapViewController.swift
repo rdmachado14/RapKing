@@ -46,5 +46,11 @@ class RKCreateRapViewController: UIViewController
         
     }
     
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
+    
 
 }
