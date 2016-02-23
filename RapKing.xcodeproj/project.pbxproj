@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		794B31B31C7C95B100E80C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794B31B21C7C95B100E80C79 /* AppDelegate.swift */; };
+		794B31B51C7C95B100E80C79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794B31B41C7C95B100E80C79 /* ViewController.swift */; };
+		794B31B81C7C95B100E80C79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794B31B61C7C95B100E80C79 /* Main.storyboard */; };
+		794B31BB1C7C95B100E80C79 /* RapKing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 794B31B91C7C95B100E80C79 /* RapKing.xcdatamodeld */; };
+		794B31BD1C7C95B100E80C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794B31BC1C7C95B100E80C79 /* Assets.xcassets */; };
+		794B31C01C7C95B100E80C79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794B31BE1C7C95B100E80C79 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		794B31AF1C7C95B100E80C79 /* RapKing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapKing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		794B31B21C7C95B100E80C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		794B31B41C7C95B100E80C79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		794B31B71C7C95B100E80C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		794B31BA1C7C95B100E80C79 /* RapKing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RapKing.xcdatamodel; sourceTree = "<group>"; };
+		794B31BC1C7C95B100E80C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		794B31BF1C7C95B100E80C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		794B31C11C7C95B100E80C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		794B31AC1C7C95B100E80C79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		794B31A61C7C95B100E80C79 = {
+			isa = PBXGroup;
+			children = (
+				794B31B11C7C95B100E80C79 /* RapKing */,
+				794B31B01C7C95B100E80C79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		794B31B01C7C95B100E80C79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				794B31AF1C7C95B100E80C79 /* RapKing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		794B31B11C7C95B100E80C79 /* RapKing */ = {
+			isa = PBXGroup;
+			children = (
+				794B31B21C7C95B100E80C79 /* AppDelegate.swift */,
+				794B31B41C7C95B100E80C79 /* ViewController.swift */,
+				794B31B61C7C95B100E80C79 /* Main.storyboard */,
+				794B31BC1C7C95B100E80C79 /* Assets.xcassets */,
+				794B31BE1C7C95B100E80C79 /* LaunchScreen.storyboard */,
+				794B31C11C7C95B100E80C79 /* Info.plist */,
+				794B31B91C7C95B100E80C79 /* RapKing.xcdatamodeld */,
+			);
+			path = RapKing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		794B31AE1C7C95B100E80C79 /* RapKing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794B31C41C7C95B100E80C79 /* Build configuration list for PBXNativeTarget "RapKing" */;
+			buildPhases = (
+				794B31AB1C7C95B100E80C79 /* Sources */,
+				794B31AC1C7C95B100E80C79 /* Frameworks */,
+				794B31AD1C7C95B100E80C79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RapKing;
+			productName = RapKing;
+			productReference = 794B31AF1C7C95B100E80C79 /* RapKing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		794B31A71C7C95B100E80C79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Rodrigo DAngelo Silva Machado";
+				TargetAttributes = {
+					794B31AE1C7C95B100E80C79 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 794B31AA1C7C95B100E80C79 /* Build configuration list for PBXProject "RapKing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 794B31A61C7C95B100E80C79;
+			productRefGroup = 794B31B01C7C95B100E80C79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				794B31AE1C7C95B100E80C79 /* RapKing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		794B31AD1C7C95B100E80C79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794B31C01C7C95B100E80C79 /* LaunchScreen.storyboard in Resources */,
+				794B31BD1C7C95B100E80C79 /* Assets.xcassets in Resources */,
+				794B31B81C7C95B100E80C79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		794B31AB1C7C95B100E80C79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794B31B51C7C95B100E80C79 /* ViewController.swift in Sources */,
+				794B31B31C7C95B100E80C79 /* AppDelegate.swift in Sources */,
+				794B31BB1C7C95B100E80C79 /* RapKing.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		794B31B61C7C95B100E80C79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				794B31B71C7C95B100E80C79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		794B31BE1C7C95B100E80C79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				794B31BF1C7C95B100E80C79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		794B31C21C7C95B100E80C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		794B31C31C7C95B100E80C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		794B31C51C7C95B100E80C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RapKing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bepid.RapKing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		794B31C61C7C95B100E80C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RapKing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bepid.RapKing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		794B31AA1C7C95B100E80C79 /* Build configuration list for PBXProject "RapKing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794B31C21C7C95B100E80C79 /* Debug */,
+				794B31C31C7C95B100E80C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794B31C41C7C95B100E80C79 /* Build configuration list for PBXNativeTarget "RapKing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794B31C51C7C95B100E80C79 /* Debug */,
+				794B31C61C7C95B100E80C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		794B31B91C7C95B100E80C79 /* RapKing.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				794B31BA1C7C95B100E80C79 /* RapKing.xcdatamodel */,
+			);
+			currentVersion = 794B31BA1C7C95B100E80C79 /* RapKing.xcdatamodel */;
+			path = RapKing.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 794B31A71C7C95B100E80C79 /* Project object */;
+}
