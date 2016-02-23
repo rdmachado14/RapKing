@@ -11,6 +11,10 @@ import UIKit
 class RKCreateRapViewController: UIViewController
 {
 
+    @IBOutlet weak var textFieldRapTitle: UITextField!
+    @IBOutlet weak var textViewRap: UITextView!
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -23,6 +27,10 @@ class RKCreateRapViewController: UIViewController
     }
     
 
+    @IBAction func actionSave(sender: AnyObject)
+    {
+        
+    }
 
 
 }

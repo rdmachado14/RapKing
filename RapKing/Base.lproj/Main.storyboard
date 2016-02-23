@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BFz-Eg-5Sd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="302.5" y="388.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Rap View Controller-->
         <scene sceneID="Hvb-rW-SNd">
             <objects>
-                <viewController id="BFz-Eg-5Sd" sceneMemberID="viewController">
+                <viewController id="BFz-Eg-5Sd" customClass="RKCreateRapViewController" customModule="RapKing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bHc-9B-Wkc"/>
                         <viewControllerLayoutGuide type="bottom" id="gYB-qY-5xz"/>
@@ -35,13 +35,41 @@
                     <view key="view" contentMode="scaleToFill" id="uo4-Zb-ffg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OPV-nc-GMT">
+                                <rect key="frame" x="0.0" y="34" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gqh-zW-5ym">
+                                <rect key="frame" x="28" y="162" width="320" height="318"/>
+                                <color key="backgroundColor" red="0.7799873737373737" green="0.7799873737373737" blue="0.7799873737373737" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5cM-G8-1si">
+                                <rect key="frame" x="92" y="109" width="190" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcQ-Cm-O6A">
+                                <rect key="frame" x="167" y="523" width="43" height="30"/>
+                                <state key="normal" title="Salvar"/>
+                                <connections>
+                                    <action selector="actionSave:" destination="BFz-Eg-5Sd" eventType="touchUpInside" id="lhA-kO-9c2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="textFieldRapTitle" destination="5cM-G8-1si" id="j9n-r3-v11"/>
+                        <outlet property="textViewRap" destination="gqh-zW-5ym" id="xHt-aQ-BKX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBm-Ps-sFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="743.5" y="381.5"/>
+            <point key="canvasLocation" x="854.5" y="388.5"/>
         </scene>
     </scenes>
 </document>
