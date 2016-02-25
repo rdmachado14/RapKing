@@ -19,6 +19,7 @@ class RKCreateRapViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
 
     }
 
@@ -50,6 +51,10 @@ class RKCreateRapViewController: UIViewController
     func dismissKeyboard()
     {
         view.endEditing(true)
+    }
+    
+    @IBAction func voltar(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
 
