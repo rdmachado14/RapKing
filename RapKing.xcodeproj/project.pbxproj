@@ -92,9 +92,19 @@
 		794B31CF1C7D12DD00E80C79 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A7BD61DE1C7F6F9800EFF1E0 /* TelaInicial */,
 				79571D1A1C7D1714007EC09F /* RKCreateRapViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		A7BD61DE1C7F6F9800EFF1E0 /* TelaInicial */ = {
+			isa = PBXGroup;
+			children = (
+				A7BD61DF1C7F73DF00EFF1E0 /* RKTelaInicialViewController.swift */,
+				A7BD61E11C7F73FC00EFF1E0 /* RKCutomCell.swift */,
+			);
+			name = TelaInicial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +180,10 @@
 			files = (
 				79571D1D1C7D231C007EC09F /* RKDictionary.swift in Sources */,
 				794B31B51C7C95B100E80C79 /* ViewController.swift in Sources */,
+				A7BD61E21C7F73FC00EFF1E0 /* RKCutomCell.swift in Sources */,
 				79571D1B1C7D1714007EC09F /* RKCreateRapViewController.swift in Sources */,
 				794B31B31C7C95B100E80C79 /* AppDelegate.swift in Sources */,
+				A7BD61E01C7F73DF00EFF1E0 /* RKTelaInicialViewController.swift in Sources */,
 				794B31BB1C7C95B100E80C79 /* RapKing.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
