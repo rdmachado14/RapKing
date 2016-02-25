@@ -14,7 +14,8 @@
 		794B31BD1C7C95B100E80C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794B31BC1C7C95B100E80C79 /* Assets.xcassets */; };
 		794B31C01C7C95B100E80C79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794B31BE1C7C95B100E80C79 /* LaunchScreen.storyboard */; };
 		79571D1B1C7D1714007EC09F /* RKCreateRapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79571D1A1C7D1714007EC09F /* RKCreateRapViewController.swift */; };
-		79571D1D1C7D231C007EC09F /* RKDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79571D1C1C7D231C007EC09F /* RKDictionary.swift */; };
+		A7BD61E01C7F73DF00EFF1E0 /* RKTelaInicialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BD61DF1C7F73DF00EFF1E0 /* RKTelaInicialViewController.swift */; };
+		A7BD61E21C7F73FC00EFF1E0 /* RKCutomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BD61E11C7F73FC00EFF1E0 /* RKCutomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		794B31BF1C7C95B100E80C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		794B31C11C7C95B100E80C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79571D1A1C7D1714007EC09F /* RKCreateRapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKCreateRapViewController.swift; sourceTree = "<group>"; };
-		79571D1C1C7D231C007EC09F /* RKDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKDictionary.swift; sourceTree = "<group>"; };
+		A7BD61DF1C7F73DF00EFF1E0 /* RKTelaInicialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKTelaInicialViewController.swift; sourceTree = "<group>"; };
+		A7BD61E11C7F73FC00EFF1E0 /* RKCutomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKCutomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
