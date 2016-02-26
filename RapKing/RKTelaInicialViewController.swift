@@ -41,28 +41,6 @@ class RKTelaInicialViewController: UIViewController, UIDocumentInteractionContro
         // Dispose of any resources that can be recreated.
     }
     
-    func list(entity: String) -> [AnyObject]? {
-        let context: NSManagedObjectContext = appDelegate.managedObjectContext
-        let requestFetch = NSFetchRequest(entityName: entity)
-        do {
-            
-            return try context.executeFetchRequest(requestFetch)
-            
-        } catch {
-            print("Erro na listagem")
-            return nil
-        }
-    }
-    
-    @IBAction func listar(sender: AnyObject) {
-        resultado = Rhyme.list("Rhyme") as! [Rhyme]!
-//        if resultado != nil {
-//            print(resultado[0].title)
-//        } else {
-//            print("nada")
-//        }
-    }
-
     /*
     // MARK: - Navigation
 
