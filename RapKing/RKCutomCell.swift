@@ -11,6 +11,7 @@ import UIKit
 class RKCutomCell: UITableViewCell {
 
     @IBOutlet weak var lbRima: UILabel!
+    @IBOutlet weak var ivImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

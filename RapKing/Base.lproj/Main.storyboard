@@ -110,6 +110,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGE-Aw-wss">
                                                     <rect key="frame" x="506" y="48" width="86" height="30"/>
                                                     <state key="normal" title="Compartlhar"/>
+                                                    <connections>
+                                                        <action selector="actionShare:" destination="O3i-av-xjU" eventType="touchUpInside" id="Jya-EE-L1y"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoM-Pp-G92">
                                                     <rect key="frame" x="392" y="48" width="40" height="30"/>
@@ -140,6 +143,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
+                                            <outlet property="ivImage" destination="hQS-gV-Gau" id="AUX-Yb-aU6"/>
                                             <outlet property="lbRima" destination="ufg-35-GT0" id="UNH-7N-vYE"/>
                                         </connections>
                                     </tableViewCell>

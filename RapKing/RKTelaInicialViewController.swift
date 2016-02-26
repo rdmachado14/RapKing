@@ -9,9 +9,10 @@
 import UIKit
 import CoreData
 
-class RKTelaInicialViewController: UIViewController {
+class RKTelaInicialViewController: UIViewController, UIDocumentInteractionControllerDelegate {
 
     @IBOutlet weak var myTable: UITableView!
+    var documentController : UIDocumentInteractionController!
     
     let appDelegate: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
     var resultado = [Rhyme]()
@@ -71,8 +72,31 @@ class RKTelaInicialViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func actionShare(sender: AnyObject)
+    {
+        
+        print("share")
+        
+        let writePath = (NSTemporaryDirectory() as NSString).stringByAppendingPathComponent("img.ig")
+        let imageData = UIImagePNGRepresentation(UIImage(named: "with-marca-3 4")!)
+        
+        if imageData?.writeToFile(writePath, atomically: true) == false {
+            return
+        } else {
+            let fileURL = NSURL(fileURLWithPath: writePath)
+            
+            self.documentController = UIDocumentInteractionController(URL: fileURL)
+            self.documentController.delegate = self
+            self.documentController.presentOpenInMenuFromRect(self.view.frame, inView: self.view, animated: true)
+        }
+        
+    }
 
 }
+    
+
+
 
 extension RKTelaInicialViewController : UITableViewDataSource {
     

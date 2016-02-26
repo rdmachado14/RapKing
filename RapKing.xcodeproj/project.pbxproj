@@ -185,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79571D1D1C7D231C007EC09F /* RKDictionary.swift in Sources */,
 				794B31B51C7C95B100E80C79 /* ViewController.swift in Sources */,
 				A7BD61E21C7F73FC00EFF1E0 /* RKCutomCell.swift in Sources */,
 				A7BD61E51C7FCA0000EFF1E0 /* Rhyme+CoreDataProperties.swift in Sources */,
