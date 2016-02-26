@@ -7,16 +7,32 @@
 //
 
 import UIKit
+import CoreData
 
 class RKTelaInicialViewController: UIViewController {
 
     @IBOutlet weak var myTable: UITableView!
     
+    let appDelegate: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+    var resultado = [Rhyme]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        resultado = Rhyme.list("Rhyme") as! [Rhyme]!
 
         myTable.tableFooterView = UIView(frame: CGRectZero)
+        print(resultado.count)
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        resultado = Rhyme.list("Rhyme") as! [Rhyme]!
+        myTable.reloadData()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +40,27 @@ class RKTelaInicialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func list(entity: String) -> [AnyObject]? {
+        let context: NSManagedObjectContext = appDelegate.managedObjectContext
+        let requestFetch = NSFetchRequest(entityName: entity)
+        do {
+            
+            return try context.executeFetchRequest(requestFetch)
+            
+        } catch {
+            print("Erro na listagem")
+            return nil
+        }
+    }
+    
+    @IBAction func listar(sender: AnyObject) {
+        resultado = Rhyme.list("Rhyme") as! [Rhyme]!
+//        if resultado != nil {
+//            print(resultado[0].title)
+//        } else {
+//            print("nada")
+//        }
+    }
 
     /*
     // MARK: - Navigation
@@ -44,13 +81,13 @@ extension RKTelaInicialViewController : UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return resultado.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! RKCutomCell
-        cell.lbRima.text = "Meu rap é foda!!!!"
+        cell.lbRima.text = resultado[indexPath.row].title
         return cell
     }
     

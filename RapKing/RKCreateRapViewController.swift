@@ -31,20 +31,11 @@ class RKCreateRapViewController: UIViewController
 
     @IBAction func actionSave(sender: AnyObject)
     {
-        // ligação com o delegate
-        let appDelegate: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
-        let context: NSManagedObjectContext = appDelegate.managedObjectContext
         
-        // entidade do banco de dados
-        let newRap = NSEntityDescription.insertNewObjectForEntityForName("Rhyme", inManagedObjectContext: context) as NSManagedObject
+        Rhyme.save(textfFieldTitle.text!, rap: textfFieldTitle.text!)
         
-        // atributos da entidade
-        newRap.setValue(textfFieldTitle.text, forKey: "title")
-        newRap.setValue(textViewRap.text, forKey: "rap")
-        
-        print(newRap)
-        print("Objetos salvos!")
-        
+            
+            
     }
     
     
