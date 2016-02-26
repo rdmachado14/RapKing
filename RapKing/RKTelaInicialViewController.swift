@@ -9,6 +9,10 @@
 import UIKit
 import CoreData
 
+protocol PegaIndice {
+    func pegaIndice(indice:Int)
+}
+
 class RKTelaInicialViewController: UIViewController, UIDocumentInteractionControllerDelegate {
 
     @IBOutlet weak var myTable: UITableView!
@@ -16,6 +20,8 @@ class RKTelaInicialViewController: UIViewController, UIDocumentInteractionContro
     
     let appDelegate: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
     var resultado = [Rhyme]()
+    var id:Int!
+    var verificador = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +36,17 @@ class RKTelaInicialViewController: UIViewController, UIDocumentInteractionContro
         
         resultado = Rhyme.list("Rhyme") as! [Rhyme]!
         myTable.reloadData()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "edit" {
+            let viewController:RKCreateRapViewController = segue.destinationViewController as! RKCreateRapViewController
+            if verificador.boolValue {
+                viewController.getRap = resultado[id].rap
+                viewController.getTitle = resultado[id].title
+            }
+            viewController.verificador = verificador
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -70,6 +87,12 @@ class RKTelaInicialViewController: UIViewController, UIDocumentInteractionContro
         }
         
     }
+    
+    @IBAction func escrever(sender: AnyObject) {
+        verificador = false
+        performSegueWithIdentifier("edit", sender: self)
+    }
+    
 
 }
     
@@ -89,6 +112,8 @@ extension RKTelaInicialViewController : UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! RKCutomCell
+        cell.pegaIndice = self
+        cell.id = indexPath.row
         cell.lbRima.text = resultado[indexPath.row].title
         return cell
     }
@@ -103,4 +128,12 @@ extension RKTelaInicialViewController : UITableViewDelegate {
         myTable.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
+}
+
+extension RKTelaInicialViewController : PegaIndice {
+    func pegaIndice(indice: Int) {
+        self.id = indice
+        self.verificador = true
+        performSegueWithIdentifier("edit", sender: self)
+    }
 }

@@ -12,6 +12,8 @@ class RKCutomCell: UITableViewCell {
 
     @IBOutlet weak var lbRima: UILabel!
     @IBOutlet weak var ivImage: UIImageView!
+    var pegaIndice:PegaIndice? = nil
+    var id:Int? = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,5 +25,11 @@ class RKCutomCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    @IBAction func edit(sender: AnyObject) {
+        let indice = id
+        pegaIndice?.pegaIndice(indice!)
+    }
+    
 
 }
