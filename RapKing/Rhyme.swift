@@ -55,4 +55,17 @@ class Rhyme: NSManagedObject {
         
     }
     
+    static func SaveEdit() {
+        
+        do {
+            let appDelegate: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+            let context: NSManagedObjectContext = appDelegate.managedObjectContext
+            try context.save()
+            
+            print("Edicao salvos!")
+        } catch {
+            print("erro")
+        }
+    }
+    
 }

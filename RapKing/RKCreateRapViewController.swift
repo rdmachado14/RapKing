@@ -15,11 +15,11 @@ class RKCreateRapViewController: UIViewController
     @IBOutlet weak var textfFieldTitle: UITextField!
     @IBOutlet weak var textViewRap: UITextView!
     var verificador:Bool!
-    var getTitle:String!
-    var getRap:String!
+    var getObjeto:Rhyme!
 
     override func viewDidLoad()
     {
+        
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
@@ -36,8 +36,15 @@ class RKCreateRapViewController: UIViewController
 
     @IBAction func actionSave(sender: AnyObject)
     {
+        if verificador.boolValue {
+            getObjeto.title = textfFieldTitle.text
+            getObjeto.rap = textViewRap.text
+            Rhyme.SaveEdit()
+            
+        } else {
+            Rhyme.save(textfFieldTitle.text!, rap: textViewRap.text!)
+        }
         
-        Rhyme.save(textfFieldTitle.text!, rap: textViewRap.text!)
         
             
             
@@ -45,8 +52,8 @@ class RKCreateRapViewController: UIViewController
     
     func verifica() {
         if verificador.boolValue {
-            textfFieldTitle.text = getTitle
-            textViewRap.text = getRap
+            textfFieldTitle.text = getObjeto.title
+            textViewRap.text = getObjeto.rap
         } else {
             print("novo rap")
         }

@@ -42,8 +42,7 @@ class RKTelaInicialViewController: UIViewController, UIDocumentInteractionContro
         if segue.identifier == "edit" {
             let viewController:RKCreateRapViewController = segue.destinationViewController as! RKCreateRapViewController
             if verificador.boolValue {
-                viewController.getRap = resultado[id].rap
-                viewController.getTitle = resultado[id].title
+                viewController.getObjeto = resultado[id]
             }
             viewController.verificador = verificador
         }
